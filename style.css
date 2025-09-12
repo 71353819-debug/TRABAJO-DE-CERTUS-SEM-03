@@ -1,0 +1,160 @@
+/* Importa tipografías desde Google Fonts: 
+   - 'Cinzel' para títulos (con peso 600).
+   - 'Roboto' para el cuerpo del texto (400 normal y 700 bold). */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Roboto:wght@400;700&display=swap');
+
+/* ✨ ESTILOS BASE ✨ */
+body {
+  font-family: 'Roboto', sans-serif; /* Fuente predeterminada */
+  margin: 0;                         /* Elimina márgenes por defecto */
+  padding: 0;                        /* Elimina relleno por defecto */
+  text-align: center;                /* Centra el texto */
+  color: #2b2b2b;    
+  background: black;                /* Color principal del texto */
+}
+
+/* 🎭 Contenedor principal de la historia */
+.container {
+  padding: 40px;                     /* Espaciado interno */
+  max-width: 900px;                  /* Ancho máximo */
+  margin: auto;                      /* Centrado horizontal */
+  background: rgba(255, 255, 255, 0.85); /* Fondo blanco semitransparente */
+  border-radius: 20px;               /* Bordes redondeados */
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2); /* Sombra exterior */
+}
+
+/* 🎨 Títulos */
+h1 {
+  font-family: 'Cinzel', serif;      /* Fuente elegante */
+  font-size: 3em;                    /* Tamaño grande */
+  margin-bottom: 20px;               /* Espacio debajo */
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.15); /* Sombra suave */
+  color:yellow;
+}
+
+h2 {
+  font-size: 1.8em;
+  margin-top: 30px;
+  color: yellow;
+}
+
+/* 📖 Texto */
+p, blockquote {
+  font-size: 1.2em;
+  line-height: 1.8;                  /* Espaciado entre líneas */
+}
+
+/* 🔲 Citas destacadas */
+blockquote {
+  background: #0d0d0d;               /* Fondo suave */
+  padding: 15px;                     /* Espaciado interno */
+  border-left: 5px solid #e67e22;    /* Línea decorativa a la izquierda */
+  border-radius: 10px;
+  margin: 20px auto;
+  width: 80%;                        /* Más angosto que el resto del texto */
+  font-style: italic;
+  color: whitesmoke;
+}
+
+/* 🖼️ Imágenes */
+img {
+  max-width: 90%;                    /* Nunca excede el 90% del contenedor */
+  border-radius: 20px;
+  margin: 20px 0;
+  box-shadow: 0px 5px 25px rgba(0,0,0,0.3);
+}
+
+/* 🔘 Botones */
+button {
+  border: none;
+  padding: 15px 30px;
+  margin: 15px;
+  border-radius: 12px;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s; /* Animaciones al hover */
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+  color: yellow;                       /* Texto blanco */
+  background: #0d0d0d;
+  filter: grayscale(100%);          /* para quitarle color a los elementos*/
+}
+
+button:hover {
+  transform: scale(1.08); /* Aumenta tamaño al pasar el mouse */
+
+  filter: grayscale(0);     /*le devuelve el color al pasar por encima el cursor*/      
+}
+
+/* 🔗 Enlaces */
+a {
+  text-decoration: none;             /* Elimina subrayado */
+}
+
+/* 🌿 AVENTURA */
+body.aventura {
+  background: linear-gradient(to bottom, #d4f7d0, #a0d995); /* Fondo verde natural */
+}
+body.aventura h1, 
+body.aventura h2 {
+  color: #1e8449; /* Verde oscuro para títulos */
+}
+body.aventura button {
+  background: linear-gradient(135deg, #27ae60, #1e8449); /* Verde degradado */
+}
+body.aventura button:hover {
+  background: linear-gradient(135deg, #1e8449, #145a32);
+}
+
+/* 👻 TERROR */
+body.terror {
+  background: linear-gradient(to bottom, #2c3e50, #1a252f); /* Fondo oscuro */
+  color: #f2f2f2; /* Texto claro */
+}
+body.terror .container {
+  background: rgba(30, 39, 46, 0.9); /* Contenedor gris oscuro */
+  color: #f2f2f2;
+}
+body.terror h1, 
+body.terror h2 {
+  color: #e74c3c; /* Rojo sangre para títulos */
+}
+body.terror button {
+  background: linear-gradient(135deg, #e74c3c, #922b21); /* Rojo degradado */
+}
+body.terror button:hover {
+  background: linear-gradient(135deg, #c0392b, #641e16);
+}
+
+/* 💖 ROMANCE */
+body.romance {
+  background: linear-gradient(to bottom, #ffe6f0, #ffb6c1); /* Fondo rosa */
+}
+body.romance h1, 
+body.romance h2 {
+  color: #c2185b; /* Rosa fuerte para títulos */
+}
+body.romance button {
+  background: linear-gradient(135deg, #ec407a, #c2185b);
+}
+body.romance button:hover {
+  background: linear-gradient(135deg, #c2185b, #880e4f);
+}
+
+/* 🎭 DRAMA */
+body.drama {
+  background: linear-gradient(to bottom, #dcd6f7, #a29bfe); /* Fondo violeta */
+}
+body.drama h1, 
+body.drama h2 {
+  color: #4a148c; /* Morado oscuro para títulos */
+}
+body.drama button {
+  background: linear-gradient(135deg, #6a1b9a, #4a148c);
+}
+body.drama button:hover {
+  background: linear-gradient(135deg, #4a148c, #12005e);
+}
+p{
+  text-align: justify;
+}

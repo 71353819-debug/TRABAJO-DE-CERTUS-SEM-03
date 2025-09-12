@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Historia Interactiva</title>
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    /* Estilos del efecto de imágenes */
+    section {
+      display: flex;
+      width: 90%;
+      max-width: 900px;
+      height: 450px;
+      margin: 30px auto;
+      border-radius: 0;
+      overflow: hidden;
+    }
+    section img {
+      width: 0;
+      flex-grow: 1;
+      object-fit: cover;
+      opacity: 0.8;
+      transition: .5s ease;
+    }
+    section img:hover {
+      cursor: crosshair;
+      width: 200px;
+      opacity: 1;
+      filter: contrast(120%);
+    }
+  </style>
+</head>
+<body class="principal">
+  <div class="container">
+    <h1>📖 La Historia Interactiva</h1>
+    <img src="../../../img/cabaña1.jpg" alt="Cabaña misteriosa en la montaña">
+    <p>
+      La noche cae y el frío se hace insoportable.  
+      Una vieja cabaña se alza en medio de la montaña, crujiente con cada ráfaga de viento.  
+      Dentro, cuatro viajeros se reúnen alrededor de una lámpara de aceite: <b>Lucía, Andrés, Mateo y Sofía</b>.
+    </p>
+    <p>
+      Sobre la mesa descansa un diario empapado por la humedad. Sus páginas revelan dibujos extraños y frases torcidas:  
+
+    </p>
+    <blockquote>
+        “Las montañas cazan a los que no saben escuchar…”
+    </blockquote>
+    <p>
+      Afuera, la nieve cae en silencio. Los viajeros sienten que deben elegir un camino para seguir su destino.  
+      <b>Y aquí es donde empieza tu decisión...</b>
+    </p>
+    <h2>Elige el rumbo de la historia</h2>
+    <div class="botones">
+      <a href="../aventura/aventura.html"><button class="aventura">🧭 salir al <br> dia siguiente</button></a>
+      <a href="../terror/Terror .html"><button class="terror">👻salir de noche</button></a>
+      <a href="../romance/Romance.html"><button class="romance">❤️ empezar a <br> conocerse</button></a>
+      <a href="../drama/Drama.html"><button class="drama">🎭 separarse</button></a>
+    </div>
+
+    <!-- Galería interactiva -->
+    <section>
+      <img src="../../../img/aventura.jpg" alt="Aventura">
+      <img src="../../../img/terror.jpg" alt="Terror">
+      <img src="../../../img/ROMANCE.jpg" alt="Romance"> 
+      <img src="/img/DRAMA.jpg" alt="Drama">
+      
+    </section>
+  </div>
+   <audio src="../../../sonido/chill-lofi.mp3" autoplay loop></audio>
+</body>
+</html>
